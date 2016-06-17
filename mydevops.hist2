@@ -1,0 +1,1000 @@
+  195  vagrant destroy
+  196  VAGRANT_OPENSTACK_LOG=debug vagrant up
+  197  vagrant destroy
+  198  vagrant ssh-config
+  199  vagrant up
+  200  vagrant ssh-config
+  201  vagrant ssh
+  202  vi Vagrantfile 
+  203  ls
+  204  vagrant ssh
+  205  ls
+  206  cd ..
+  207  ls
+  208  scp
+  209  scp cloud.key.pub vagrant@10.90.0.44:cloud.key.pub
+  210  scp cloud.key.pub vagrant@10.90.0.90:cloud.key.pub
+  211  cd vagrant
+  212  vagran ssh
+  213  vagrant ssh
+  214  vagrant destroy
+  215  vagrant up
+  216  vi Vagrantfile 
+  217  ssh -i ~/.ssh/cloud.key vagrant@10.90.0.91
+  218  vagrant ssh
+  219  vagrant ssh-config
+  220  vagrant ssh
+  221  ssh -i ~/.ssh/cloud.key vagrant@10.90.0.91
+  222  vagrant destroy
+  223  vagrant up
+  224  ssh -i ~/.ssh/cloud.key vagrant@10.90.0.91
+  225  ssh -i ~/.ssh/cloud.key vagrant@10.90.0.92
+  226  VirtualBox --version
+  227  VirtualBox
+  228  VirtualBox --help
+  229  VBoxManage list
+  230  VBoxManage list vms
+  231  VBoxManage 
+  232  VBoxManage list hostinfo
+  233  exit
+  234  su
+  235  exit
+  236  su
+  237  exit
+  238  chef gem install knife-openstack
+  239  exit
+  240  ls
+  241  cd devops
+  242  ls
+  243  cd vagrant_openstack/
+  244  ls
+  245  vi Vagrantfile 
+  246  su
+  247  ls
+  248  ls devops
+  249  git info
+  250  git
+  251  git branch
+  252  ls
+  253  cd devops
+  254  git brank
+  255  git branch
+  256  git branch --help
+  257  ls
+  258  pwd
+  259  ls
+  260  git pull
+  261  cd ..
+  262  ls
+  263  cd vagrant
+  264  ls
+  265  ls test
+  266  less test 
+  267  less Vagrantfile 
+  268  ls
+  269  cd ..
+  270  ls
+  271  cd devops
+  272  ls
+  273  mkdir vagrant_openstack
+  274  cd vagrant
+  275  cd ..
+  276  cd vagrant_openstack/
+  277  mv ../../vagrant/Vagrantfile .
+  278  less Vagrantfile 
+  279  cd ../..
+  280  ls
+  281  cd devops
+  282  ls
+  283  git add .
+  284  git commit .
+  285  git config --global user.email "jkidd@kidd6.com"
+  286  git config --global user.user.name "jwkidd3"
+  287  git commit .
+  288  git config --global user.name jwkidd3
+  289  git commit .
+  290  vagrant push
+  291  git push
+  292  pwd
+  293  cd ..
+  294  ls
+  295  rm -rf vagrant
+  296  ls
+  297  su
+  298  ls
+  299  cd dev
+  300  cd devops
+  301  ls
+  302  mkdir ansible
+  303  cd ansible/
+  304  cp /etc/ansible/hosts .
+  305  vi hosts 
+  306  ansible all -m ping
+  307  ls
+  308  less hosts 
+  309  vi site.yml
+  310  ansible
+  311  less site.yml 
+  312  ls
+  313  ansible-playbook site.yml 
+  314  vi site.yml 
+  315  rm site.yml 
+  316  vi site.yml
+  317  ansible-playbook site.yml 
+  318  vi site.
+  319  ls
+  320  rm site.retry 
+  321  vi site.yml 
+  322  ansible-playbook site.yml 
+  323  rm site.retry 
+  324  vi site.yml 
+  325  vi hosts 
+  326  vi site.yml 
+  327  ansible-playbook site.yml 
+  328  vi site.yml 
+  329  ansible-playbook site.yml 
+  330  vi site.yml 
+  331  ansible-playbook site.yml 
+  332  vi site.yml 
+  333  vi ops.yml
+  334  ansible-playbook ops.yml 
+  335  vi ops.yml
+  336  ansible-playbook ops.yml 
+  337  vi hosts 
+  338  ansible-playbook ops.yml --ho
+  339  ansible-playbook ops.yml --help
+  340  ansible-playbook ops.yml
+  341  ansible-playbook -i hosts ops.yml
+  342  ping api-frfly1.client.metacloud.net
+  343  vi hoss
+  344  vi hosts
+  345  ansible-playbook -i hosts ops.yml
+  346  vi ops.yml 
+  347  ansible-playbook -i hosts ops.yml
+  348  ping localhost
+  349  sudo service ansible start
+  350  su
+  351  ls -l
+  352  rm *.rety
+  353  rm *.retry
+  354  ls
+  355  ansible-playbook -i hosts ops.yml
+  356  python
+  357  sudo yum install python-shade
+  358  sudo yum install python-shadeclient
+  359  sudo yum install python-novaclient
+  360  su
+  361  ansible-playbook -i hosts ops.yml
+  362  vi ops.
+  363  vi ops.yml 
+  364  ansible-playbook -i hosts ops.yml
+  365  vi ops.yml 
+  366  ansible-playbook -i hosts ops.yml
+  367  vi op
+  368  ls
+  369  cd devops
+  370  ls
+  371  cd ansible/
+  372  ls
+  373  rm ops.retry 
+  374  ls
+  375  vi ops.yml 
+  376  ls
+  377  cd devops
+  378  ls
+  379  cd ansible/
+  380  ls
+  381  vi site.yml 
+  382  ansible-playbook -i hosts ops.yml 
+  383  vi ops.yml 
+  384  ls
+  385  vi site.yml 
+  386  ansible-playbook -i hosts site.yml 
+  387  ansible
+  388  ansible localhost
+  389  ansible-playbook -i hosts site.yml 
+  390  ansible-playbook -i hosts site.yml -vvvvv
+  391  vi site.yml 
+  392  ansible-playbook -i hosts site.yml -vvvvv
+  393  rm -f site.retry 
+  394  ansible-playbook -i hosts site.yml -vvvvv
+  395  python nova
+  396  ansible all -i "localhost," -c local -m shell -a 'echo hello world'
+  397  vi hosts 
+  398  ansible all -i hosts -c local -m shell -a 'echo hello world'
+  399  ansible-playbook -i hosts -c local site.yml
+  400  pip install shade
+  401  sudo pip install shade
+  402  ansible-playbook -i hosts -c local site.yml
+  403  ls
+  404  rm site.retry 
+  405  vi site.yml 
+  406  ansible-playbook -i hosts  site.yml
+  407  ansible-playbook -i hosts -c local site.yml
+  408  vi site.yml 
+  409  ansible-playbook -i hosts -c local site.yml
+  410  vi site.yml
+  411  ansible-playbook -i hosts -c local site.yml -vvvv
+  412  vi site.yml
+  413  ansible-playbook -i hosts -c local site.yml -vvvv
+  414  ansible-playbook -i hosts -c local site.yml
+  415  vi site.yml
+  416  ansible-playbook -i hosts -c local site.yml
+  417  ansible-playbook -i hosts -c local site.yml -vvv
+  418  ansible-playbook -i hosts -c local site.yml -vvvvv
+  419  ansible-playbook -i hosts -c local site.yml -vvvvvvv
+  420  vi site.yml
+  421  ansible-playbook -i hosts -c local site.yml -vvvvvvv
+  422  ansible-playbook -i hosts -c local site.yml
+  423  vi site.yml
+  424  ansible-playbook -i hosts -c local site.yml
+  425  vi site.yml
+  426  ansible-playbook -i hosts -c local site.yml
+  427  vi site.yml
+  428  ansible-playbook -i hosts -c local site.yml
+  429  ssh firefly@10.90.0.107
+  430  ssh root@10.90.0.107
+  431  ssh cloud@10.90.0.107
+  432  vi site.yml
+  433  ansible-playbook -i hosts -c local site.yml
+  434  vi site.yml
+  435  ansible-playbook -i hosts -c local site.yml
+  436  vi site.yml
+  437  ansible-playbook -i hosts -c local site.yml
+  438  vi site.yml
+  439  ansible-playbook -i hosts -c local site.yml
+  440  vi site.yml
+  441  ansible-playbook -i hosts -c local site.yml
+  442  vi site.yml
+  443  ansible-playbook -i hosts -c local site.yml
+  444  vi site.yml
+  445  ansible-playbook -i hosts -c local site.yml
+  446  vi site.yml
+  447  ansible-playbook -i hosts -c local site.yml
+  448  vi site.yml
+  449  ansible-playbook -i hosts -c local site.yml
+  450  :q
+  451  vi site.yml
+  452  ansible-playbook -i hosts -c local site.yml
+  453  vi site.yml
+  454  ansible-playbook -i hosts -c local site.yml
+  455  vi site.yml
+  456  ansible-playbook -i hosts -c local site.yml
+  457  vi site.yml
+  458  ansible-playbook -i hosts -c local site.yml
+  459  vi site.yml
+  460  ansible-playbook -i hosts -c local site.yml
+  461  vi site.yml
+  462  ansible-playbook -i hosts -c local site.yml
+  463  vi site.yml
+  464  ansible-playbook -i hosts -c local site.yml
+  465  vi site.yml
+  466  ansible-playbook -i hosts -c local site.yml
+  467  vi site.yml
+  468  ansible-playbook -i hosts -c local site.yml
+  469  vi site.yml
+  470  ansible-playbook -i hosts -c local site.yml
+  471  vi site.yml
+  472  ansible-playbook -i hosts -c local site.yml
+  473  vi site.yml
+  474  ansible-playbook -i hosts -c local site.yml
+  475  vi site.yml
+  476  ansible-playbook -i hosts -c local site.yml
+  477  ansible-playbook -i hosts -c local site.yml -vvvv
+  478  ansible-playbook -i hosts -c local site.yml
+  479  vi site.yml
+  480  vi svr.yml
+  481  vi hosts
+  482  exit
+  483  ls
+  484  cd devops
+  485  ls
+  486  cd ansible/
+  487  ls
+  488  vi svr.yml 
+  489  vi hosts
+  490  ansible-playbook -i hosts -c local svr.yml
+  491  vi svr.
+  492  vi svr.yml 
+  493  ansible-playbook -i hosts -c local svr.yml
+  494  vi svr.yml 
+  495  ansible-playbook -i hosts -c local svr.yml
+  496  vi svr.yml 
+  497  ansible-playbook -i hosts -c local svr.yml
+  498  vi svr.yml 
+  499  ansible-playbook -i hosts -c local svr.yml
+  500  vi svr.yml 
+  501  ansible-playbook -i hosts -c local svr.yml
+  502  vi svr.yml 
+  503  ansible-playbook -i hosts -c local svr.yml
+  504  vi svr.yml 
+  505  ansible-playbook -i hosts -c local svr.yml
+  506  vi svr.yml 
+  507  ansible-playbook -i hosts -c local svr.yml
+  508  vi svr.yml 
+  509  ansible-playbook -i hosts -c local svr.yml
+  510  vi svr.yml 
+  511  ansible-playbook -i hosts -c local svr.yml
+  512  vi svr.yml 
+  513  ansible-playbook -i hosts -c local svr.yml
+  514  vi svr.yml 
+  515  ansible-playbook -i hosts -c local svr.yml --extra-vars='ansible_become_pass=cloud'
+  516  vi svr.yml 
+  517  ansible-playbook -i hosts -c local svr.yml --extra-vars='ansible_become_pass=cloud'
+  518  vi svr.yml 
+  519  ansible-playbook -i hosts -c local svr.yml --extra-vars='ansible_become_pass=cloud'
+  520  vi svr.yml 
+  521  ansible-playbook -i hosts -c local svr.yml --extra-vars='ansible_become_pass=cloud'
+  522  ansible-playbook -i hosts -c local svr.yml --extra-vars='ansible_become_pass=firefly'
+  523  vi svr.yml 
+  524  ansible-playbook -i hosts -c local svr.yml --extra-vars='ansible_become_pass=firefly'
+  525  vi svr.yml 
+  526  ansible-playbook -i hosts -c local svr.yml --extra-vars='ansible_become_pass=firefly'
+  527  ls
+  528  rm svr.retry 
+  529  ls
+  530  vi site.yml 
+  531  ansible-playbook -i hosts -c local site.yml --extra-vars='ansible_become_pass=firefly'
+  532  ssh cloud@10.90.0.110
+  533  ssh cloud@10.90.0.111
+  534  vi hosts 
+  535  ansible-playbook -i hosts -c local site.yml --extra-vars='ansible_become_pass=firefly'
+  536  vi site.yml 
+  537  ansible-playbook -i hosts -c local site.yml --extra-vars='ansible_become_pass=firefly'
+  538  vi site.yml 
+  539  ansible-playbook -i hosts -c local site.yml --extra-vars='ansible_become_pass=firefly'
+  540  vi hosts
+  541  vi site.yml 
+  542  ansible-playbook -i hosts -c local site.yml --extra-vars='ansible_become_pass=firefly'
+  543  vi site.yml 
+  544  ansible-playbook -i hosts -c local site.yml --extra-vars='ansible_become_pass=firefly'
+  545  vi site.yml 
+  546  ansible-playbook -i hosts -c local site.yml --extra-vars='ansible_become_pass=firefly'
+  547  vi site.yml 
+  548  ansible-playbook -i hosts -c local site.yml --extra-vars='ansible_become_pass=firefly'
+  549  vi site.yml 
+  550  ansible-playbook -i hosts -c local site.yml --extra-vars='ansible_become_pass=firefly'
+  551  ssh cloud@10.90.0.106
+  552  vi site.yml 
+  553  exit
+  554  ls
+  555  cd devops
+  556  ls
+  557  cd ansible/
+  558  ls
+  559  rm site.retry 
+  560  vi site.yml 
+  561  ansible-playbook -i hosts -c local site.yml
+  562  exit
+  563  ssh cloud@10.90.0.114
+  564  pwd
+  565  ls
+  566  cd ..
+  567  ls
+  568  cd firefly/
+  569  ls
+  570  cd devops/
+  571  ls
+  572  cd vagrant_openstack
+  573  ls
+  574  vi Vagrantfile 
+  575  pwd
+  576  ls
+  577  cd devops
+  578  ansible-playbook -i hosts -c local site.yml --extra-vars='ansible_become_pass=firefly'
+  579  cd ansible/
+  580  ansible-playbook -i hosts -c local site.yml --extra-vars='ansible_become_pass=firefly'
+  581  vi site.
+  582  vi site.yml 
+  583  ansible-playbook -i hosts -c local site.yml --extra-vars='ansible_become_pass=firefly'
+  584  vi site.yml 
+  585  ansible-playbook -i hosts -c local site.yml --extra-vars='ansible_become_pass=firefly'
+  586  vi site.yml 
+  587  ansible-playbook -i hosts -c local site.yml --extra-vars='ansible_become_pass=firefly'
+  588  vi site.yml 
+  589  ansible-playbook -i hosts -c local site.yml --extra-vars='ansible_become_pass=firefly'
+  590  vi site.yml 
+  591  ansible-playbook -i hosts -c local site.yml --extra-vars='ansible_become_pass=firefly'
+  592  vi site.yml 
+  593  ansible-playbook -i hosts -c local site.yml --extra-vars='ansible_become_pass=firefly'
+  594  git commit
+  595  cd ..
+  596  git add .
+  597  git commit .
+  598  ls
+  599  cd ansible/
+  600  ls
+  601  rm *.retry
+  602  ls
+  603  git add .
+  604  cd ..
+  605  git add .
+  606  git commit .
+  607  git push .
+  608  git push
+  609  su
+  610  ls
+  611  cd ansible/
+  612  ls
+  613  vi nova.yml
+  614  ansible-playbook -i hosts -c local nova.yml --extra-vars='ansible_become_pass=firefly'
+  615  cd ../
+  616  ls
+  617  cd vagrant_openstack/
+  618  ls
+  619  cd ..
+  620  ls
+  621  mkdir vagrant_openstack_2
+  622  cd vagrant_openstack_2/
+  623  vi Vagrantfile
+  624  cd ~
+  625  ls
+  626  mv dev-MPOD-openrc.sh devops/
+  627  cd devops
+  628  ls
+  629  chmod + x dev-MPOD-openrc.sh 
+  630  chmod +x dev-MPOD-openrc.sh 
+  631  ./dev-MPOD-openrc.sh 
+  632  cd vagrant_openstack_2/
+  633  ls
+  634  vagrant up
+  635  mv /home/firefly/devops.pem .
+  636  ls
+  637  vi Vagrantfile 
+  638  ls
+  639  vagrant up
+  640  vi Vagrantfile 
+  641  vagrant up
+  642  vi Vagrantfile 
+  643  vagrant up
+  644  vi Vagrantfile 
+  645  vagrant up
+  646  vi Vagrantfile 
+  647  vagrant up
+  648  vi Vagrantfile 
+  649  vagrant up
+  650  vi Vagrantfile 
+  651  vagrant up
+  652  vi Vagrantfile 
+  653  vagrant up
+  654  vi Vagrantfile 
+  655  ls ..
+  656  mv ../dev-MPOD-openrc.sh .
+  657  vi dev-MPOD-openrc.sh 
+  658  ./dev-MPOD-openrc.sh 
+  659  vagrant up
+  660  echo $OSTYPE 
+  661  set
+  662  vi dev-MPOD-openrc.sh 
+  663  . ./dev-MPOD-openrc.sh 
+  664  vagrant up
+  665  vi Vagrantfile 
+  666  vagrant up
+  667  echo $OS_AUTH_URL 
+  668  echo $OS_PASSWORD
+  669  vi Vagrantfile 
+  670  vagrant up
+  671  vi Vagrantfile 
+  672  vagrant up
+  673  VAGRANT_LOG=debug vagrant up
+  674  vi Vagrantfile 
+  675  VAGRANT_LOG=debug vagrant up
+  676  vi Vagrantfile 
+  677  VAGRANT_LOG=debug vagrant up
+  678  vi Vagrantfile 
+  679  vagrant up
+  680  vagrant destroy
+  681  vagrant openstack reset
+  682  vagrant up
+  683  vi Vagrantfile 
+  684  vagrant up
+  685  vagrant openstack reset
+  686  sudo vagrant openstack reset
+  687  . ./dev-MPOD-openrc.sh 
+  688  vagrant up
+  689  ls
+  690  vi Vagrantfile 
+  691  ls -a
+  692  rm -rf .vagrant/
+  693  ls -a
+  694  vagrant up
+  695  vagrant destroy
+  696  docker run hello-world
+  697  sudo docker run hello-world
+  698  qemu-img
+  699  ls
+  700  cd devops/
+  701  ls
+  702  cd ansible/ls
+  703  cd ansible
+  704  ls
+  705  vi site.yml 
+  706  ansible-playbook site.yml 
+  707  vi site.
+  708  rm *.retry
+  709  ls
+  710  less ops.yml 
+  711  vi site.yml 
+  712  vi svr.yml 
+  713  ls
+  714  less nova.yml 
+  715  rm nova.yml 
+  716  ls
+  717  git rm nova.yml
+  718  git commit
+  719  git add .
+  720  git commit
+  721  cd ..ls
+  722  cd ..
+  723  ls
+  724  cd var
+  725  cd vagrant
+  726  ls
+  727  cd ..
+  728  ls
+  729  pwd
+  730  cd vagrant_openstack
+  731  ls
+  732  vi Vagrantfile 
+  733  vagrant up
+  734  vagrant ssh
+  735  vi vagr
+  736  vi Vagrantfile 
+  737  vagrant destroy
+  738  vagrant up
+  739  vagrant ssh
+  740  vagrant destroy
+  741  cd ../..
+  742  ls
+  743  cd devops/
+  744  git add .
+  745  git commit
+  746  git push
+  747  ssh vagrant@10.90.0.120
+  748  cd ..
+  749  ls
+  750  java -version
+  751  chef
+  752  knife
+  753  ls
+  754  ls -l
+  755  unzip chef-starter.zip 
+  756  cd chef-repo/
+  757  ls
+  758  knife list
+  759  knife list nodes
+  760  ssh firefly@10.90.0.121
+  761  ssh root@10.90.0.121
+  762  ssh firefly@10.90.0.121
+  763  ssh firefly@10.90.0.122
+  764  ls
+  765  knife bootstrap 10.90.0.122 -x firefly -P firefly --sudo -N node1
+  766  knife node
+  767  knife delete node node1
+  768  knife node delete node1
+  769  knife cookbook
+  770  knife cookbook bulk delete
+  771  knife cookbook bulk delete *
+  772  knife cookbook bulk delete apache
+  773  knife cookbook delete ha*
+  774  knife cookbook delete haproxy
+  775  knife cookbook bulk delete ?
+  776  knife cookbook bulk delete /*/
+  777  knife cookbook delete -a
+  778  knife cookbook bulk delete .
+  779  knife environment
+  780  knife environment list
+  781  knife environment delete acceptance production
+  782  knife environment delete production
+  783  cd ..
+  784  ls
+  785  rm -rf chef-starter.zip chef-repo/
+  786  ls
+  787  hostname
+  788  ls
+  789  cd devops/
+  790  ls
+  791  git commit
+  792  git push
+  793  git pull
+  794  git push
+  795  cd ..
+  796  rm -rf devops/
+  797  ls
+  798  chef
+  799  sudo docker run hello-world
+  800  sudo docker images
+  801  sudo docker ps -a
+  802  sudo docker rm 9fd8bd3f0e98 b52bc218de26
+  803  sudo docker ps -a
+  804  exit
+  805  sudo docker run hello-world
+  806  sudo docker ps -a
+  807  sudo docker rm da4c492c2d61
+  808  pwd
+  809  ls
+  810  git clone https://github.com/jwkidd3/devops.git
+  811  cd devops/
+  812  ls
+  813  cd vagrant
+  814  ls
+  815  cd chef_nodes/
+  816  ls
+  817  vi Vagrantfile 
+  818  cd ..
+  819  ls
+  820  cd ..
+  821  ls
+  822  cd vagrant_openstack
+  823  ls
+  824  vi Vagrantfile 
+  825  vagrant up
+  826  vi Vagrantfile 
+  827  vagrant up
+  828  vi Vagrantfile 
+  829  vagrant up
+  830  vagrant openstack reset
+  831  vagrant up
+  832  rm -rf .vagrant/
+  833  vagrant openstack reset
+  834  vagrant up
+  835  vagrant destroy
+  836  vagrant openstack reset
+  837  rm -rf .vagrant/
+  838  vi Vagrantfile 
+  839  vagrant up
+  840  vi Vagrantfile 
+  841  vagrant destroy
+  842  vi Vagrantfile 
+  843  vagrant up
+  844  vagrant destroy
+  845  vi Vagrantfile 
+  846  vagrant up
+  847  vi Vagrantfile 
+  848  vagrant up
+  849  vi Vagrantfile 
+  850  vagrant up
+  851  vi Vagrantfile 
+  852  vagrant up
+  853  vagrant destroy
+  854  pwd
+  855  ls
+  856  cd ../ansible/
+  857  ls
+  858  less site.yml 
+  859  ansible-playbook site.yml 
+  860  vi site.yml 
+  861  ls
+  862  less svr.yml 
+  863  ls
+  864  less ops.yml 
+  865  ansible-playbook site.yml 
+  866  vi site.yml 
+  867  ansible-playbook site.yml 
+  868  ls
+  869  rm ops.yml svr.yml 
+  870  git commit
+  871  git commit .
+  872  git rm ops.yml svr.yml
+  873  git commit
+  874  git push
+  875  cd ..
+  876  ls
+  877  ls vagrant_openstack_2/
+  878  mv vagrant_openstack_2/dev-MPOD-openrc.sh vagrant_openstack/
+  879  cd vagrant_openstack
+  880  ls
+  881  vi dev-MPOD-openrc.sh 
+  882  . ./dev-MPOD-openrc.sh 
+  883  vi dev-MPOD-openrc.sh 
+  884  . ./dev-MPOD-openrc.sh 
+  885  vi Vagrantfile 
+  886  vi dev-MPOD-openrc.sh 
+  887  vagrant up
+  888  vi Vagrantfile 
+  889  vagrant destroy
+  890  vi Vagrantfile 
+  891  vagrant up one
+  892  vagrant destroy
+  893  vi Vagrantfile 
+  894  vagrant up one
+  895  vi Vagrantfile 
+  896  vagrant up one
+  897  vagrant destroy
+  898  cd ..
+  899  ls
+  900  pwd
+  901  git add .
+  902  git commit 
+  903  git push
+  904  ls
+  905  git rm -r vagrant_openstack_2
+  906  git commit
+  907  git push
+  908  exit
+  909  ls
+  910  cd /etc/
+  911  ls
+  912  cd jenkins
+  913  ls
+  914  cd ~
+  915  ls
+  916  su 
+  917  exit
+  918  pwd
+  919  cd devops/
+  920  git pull
+  921  cd docker/
+  922  ls
+  923  docker build .
+  924  sudo docker build .
+  925  sudo docker ps
+  926  sudo docker run -d 
+  927  sudo docker build -t="jkidd/nginx"
+  928  sudo docker build -t="jkidd/nginx" .
+  929  sudo docker ps
+  930  sudo docker images
+  931  sudo docker run -d -p 80:80 —-name static jkidd/nginx
+  932  sudo docker run -d -p 80:80 —name static jkidd/nginx
+  933  sudo docker run -d -p 80:80 —-name static jkidd/nginx
+  934  sudo docker run -d -p 80:80 —-name web jkidd/nginx
+  935  ls
+  936  sudo docker run -d -p 80:80 —-name web jkidd/nginx
+  937  sudo docker run -d -p 80:80jkidd/nginx
+  938  sudo docker run -d -p 80:80 jkidd/nginx 
+  939  sudo docker ps
+  940  sudo docker run -d -i -t -p 80:80 jkidd/nginx 
+  941  sudo docker ps
+  942  curl localhost
+  943  vi Dockerfile 
+  944  docker ps
+  945  sudo docker ps
+  946  curl localhost:80
+  947  sudo curl localhost:80
+  948  sudo docker rm -f awesome_wing
+  949  sudo docker ps -a
+  950  vi Dockerfile 
+  951  git pull 
+  952  sudo docker build -t="jkidd/nginx"
+  953  pwd
+  954  ls
+  955  sudo docker build -t="jkidd/nginx" .
+  956  alias docker="sudo /usr/bin/docker"
+  957  docker images
+  958  docker run -d --name web -p 80:80 jkidd/nginx
+  959  docker ps
+  960  curl localhost
+  961  ls
+  962  cd /var/lib/jenkins/
+  963  ls
+  964  cd workspace/test/
+  965  ls
+  966  git pull
+  967  sudo git pull
+  968  ls
+  969  docker rm -f web
+  970  su
+  971  ls
+  972  cd ..
+  973  ls
+  974  cd resttest/
+  975  ls
+  976  mvn
+  977  sudo yum install maven
+  978  ls
+  979  cd ../..
+  980  ls
+  981  pwd
+  982  cd ~
+  983  ls
+  984  cd devops/
+  985  git pull
+  986  git commit
+  987  cd ..
+  988  rm -rf devops/
+  989  ls
+  990  rm *
+  991  ls
+  992  cd ..
+  993  ls
+  994  cd cloud/
+  995  ls
+  996  cd ../root/
+  997  ls
+  998  su
+  999  exit
+ 1000  pwd
+ 1001  ls
+ 1002  cd devops
+ 1003  ls
+ 1004  cd vagrant_openstack/
+ 1005  ks
+ 1006  la
+ 1007  ls
+ 1008  vagrant up one
+ 1009  ls
+ 1010  . ./dev-MPOD-openrc.sh 
+ 1011  vagrant up one
+ 1012  ssh 10.30.0.14
+ 1013  ls
+ 1014  pwd
+ 1015  ls
+ 1016  more Vagrantfile 
+ 1017  ls
+ 1018  cd ..
+ 1019  pwd
+ 1020  ls
+ 1021  cd chef
+ 1022  ls
+ 1023  cd chef-repo
+ 1024  ls
+ 1025  knife bootstrap 10.30.0.14 -x firefly -P firefly --sudo -N node1
+ 1026  knife node add node1 "receipe[apache]"
+ 1027  knife node run_list add node1 "receipe[apache]"
+ 1028  knife node run_list add node1 "recipe[apache]"
+ 1029  knife node show node1
+ 1030  knife ssh "*:*" -x firefly -P firefly "sudo chef-client"
+ 1031  pwd
+ 1032  sudo vi hosts
+ 1033  sudo vi /etc/hosts
+ 1034  ls
+ 1035  knife ssh "*:*" -x firefly -P firefly "sudo chef-client"
+ 1036  pwd
+ 1037  ls
+ 1038  cd cookboks
+ 1039  cd cookbooks
+ 1040  ls
+ 1041  cd apache
+ 1042  ls
+ 1043  cd recipes
+ 1044  ls
+ 1045  vi default.rb
+ 1046  pwd
+ 1047  cd ../../../
+ 1048  ls
+ 1049  pwd
+ 1050  cd ../../
+ 1051  ls
+ 1052  pwd
+ 1053  cd chef
+ 1054  ls
+ 1055  cd cookbooks
+ 1056  ls
+ 1057  cd apace
+ 1058  ls
+ 1059  cd apache
+ 1060  ls
+ 1061  vi metadata.rb
+ 1062  ls
+ 1063  berks install
+ 1064  berks upload
+ 1065  pwd
+ 1066  ls
+ 1067  pwd
+ 1068  cd ..
+ 1069  ls
+ 1070  cd ..
+ 1071  ls
+ 1072  cd chef-repo
+ 1073  ls
+ 1074  cd cookbooks
+ 1075  ls
+ 1076  cd apache
+ 1077  ls
+ 1078  vi metadata.rb 
+ 1079  ls
+ 1080  cd reci
+ 1081  cd recipes/
+ 1082  ls
+ 1083  vi *
+ 1084  pwd
+ 1085  cd ..
+ 1086  ls
+ 1087  berks install
+ 1088  berks upload
+ 1089  ls
+ 1090  cd ../../
+ 1091  ls
+ 1092  knife ssh "*:*" -x firefly -P firefly "sudo chef-client"
+ 1093  ssh node1
+ 1094  ssh node1.novalocal
+ 1095  ls
+ 1096  pwd
+ 1097  ls
+ 1098  pwd
+ 1099  ls
+ 1100  cd ..
+ 1101  ls
+ 1102  cd ..
+ 1103  ls
+ 1104  pwd
+ 1105  cd
+ 1106  ls
+ 1107  cd /etc/sysconfig
+ 1108  ls
+ 1109  vi jenkins
+ 1110  pwd
+ 1111  cd
+ 1112  ls
+ 1113  cd /etc/sysconfig
+ 1114  ls
+ 1115  ls l-l
+ 1116  ls -l
+ 1117  vi jenkins
+ 1118  sudo vi jenkins
+ 1119  sudo service jenkins restart
+ 1120  ls
+ 1121  sudo vi jenkins
+ 1122  sudo service jenkins restart
+ 1123  sudo vi jenkins
+ 1124  sudo service jenkins restart
+ 1125  cd /var/lib
+ 1126  ls
+ 1127  cd jenkins
+ 1128  ls
+ 1129  cd workspace
+ 1130  ls
+ 1131  alias docker="sudo docker"
+ 1132  env
+ 1133  alias docker="sudo docker"
+ 1134  docker run hello-world
+ 1135  docker run -i -t ubunto /bin/bash
+ 1136  docker run -i -t ubuntu /bin/bash
+ 1137  ls ../
+ 1138  cd ../
+ 1139  ls
+ 1140  cd ..
+ 1141  ls
+ 1142  cd ..
+ 1143  lcd
+ 1144  cd
+ 1145  ls
+ 1146  cd devops
+ 1147  ls
+ 1148  cd docker
+ 1149  ls
+ 1150  sudo docker build -t="jkidd/web" .
+ 1151  docker images
+ 1152  docker run -d --name myweb -p 8080:80 jkidd/web
+ 1153  curl localhost:8080
+ 1154  docker status
+ 1155  docker stat
+ 1156  docker ps
+ 1157  docker exec -i -t myweb /bin/bash
+ 1158  docker ps
+ 1159  docker stop myweb
+ 1160  pwd
+ 1161  ls
+ 1162  pwd
+ 1163  ls -l
+ 1164  ls ../
+ 1165  cd /var
+ 1166  ls
+ 1167  pwd
+ 1168  cd lib
+ 1169  cd jenkins
+ 1170  ls
+ 1171  pwd
+ 1172  ls
+ 1173  cd workspace
+ 1174  ls
+ 1175  cd docker
+ 1176  ls
+ 1177  cd ..
+ 1178  ls
+ 1179  ls restest
+ 1180  ls resttest
+ 1181  ls node
+ 1182  pwd
+ 1183  ls
+ 1184  cd docker
+ 1185  ls
+ 1186  cd docker
+ 1187  ls
+ 1188  history
+ 1189  ls
+ 1190  cd
+ 1191  ls
+ 1192  cd devops
+ 1193  ls
+ 1194  history > mydevops.hist2
